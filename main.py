@@ -6,7 +6,7 @@ from threading import Thread
 from queue import Queue
 
 def copy_file_to_dest(file_path, dest_dir):
-    ext = file_path.suffix[1:]  # Get the extension without the dot
+    ext = file_path.suffix[1:]
     if not ext:
         return
     dest_path = dest_dir / ext
